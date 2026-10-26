@@ -1,0 +1,24 @@
+/* Shared, scoped form validation and Christmas callback form. */
+form[data-whatsapp-form] .request-required-note{margin:0 0 20px;font-size:13px;line-height:1.6;color:#56695b}
+form[data-whatsapp-form] .request-form-status{font-size:13px;line-height:1.6;margin:16px 0;color:#52675b}
+form[data-whatsapp-form] button[type=submit]:disabled{cursor:not-allowed;opacity:.58;transform:none;box-shadow:none}
+form[data-whatsapp-form] [aria-invalid=true]{border-color:#b02030;box-shadow:0 0 0 2px #b0203010}
+form[data-whatsapp-form] .request-field-error{font-size:12px;line-height:1.5;color:#a11929}
+form[data-whatsapp-form] .request-field-error[hidden]{display:none}
+form[data-whatsapp-form] .privacy-check input[type=checkbox]{flex:0 0 19px;width:19px;height:19px;min-height:19px;padding:0;margin:3px 0 0;accent-color:#0b4a2f}
+.xmas-contact-form{margin:0;border:1px solid #e6dfd1;border-radius:18px;padding:32px;background:#fffdf7;color:#16372f;min-width:0}
+.xmas-contact-form h3{font:400 28px/1.25 Georgia,serif;margin:0 0 14px}
+.xmas-contact-form .request-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.xmas-contact-form .request-field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.xmas-contact-form .request-field-full{grid-column:1/-1}
+.xmas-contact-form label{font-size:13px;font-weight:650;color:#253f33}
+.xmas-contact-form input:not([type=checkbox]),.xmas-contact-form select,.xmas-contact-form textarea{display:block;width:100%;min-width:0;min-height:50px;box-sizing:border-box;border:1px solid #cbd9cc;border-radius:12px;background:#f7faf4;color:#16372f;font:inherit;font-size:15px;padding:12px}
+.xmas-contact-form textarea{min-height:95px;resize:vertical}
+.xmas-contact-form input:focus-visible,.xmas-contact-form select:focus-visible,.xmas-contact-form textarea:focus-visible{outline:3px solid #b5864050;outline-offset:1px;border-color:#8c713e}
+.xmas-contact-form .privacy-check{display:flex;gap:10px;align-items:flex-start;line-height:1.6}
+.xmas-contact-form .privacy-check a{color:#9d1724;text-decoration:underline}
+.xmas-contact-form .xmas-button{width:100%;margin-top:4px}
+.xmas-contact-form .request-send-note{margin:18px 0 0;font-size:12px;line-height:1.7;color:#637369}
+.xmas-contact-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:start}
+#richiamata{scroll-margin-top:24px}
+@media(max-width:760px){.xmas-contact-grid{grid-template-columns:minmax(0,1fr);gap:24px}.xmas-contact-form{padding:23px}.xmas-contact-form .request-fields{grid-template-columns:minmax(0,1fr);gap:16px}.xmas-contact-form h3{font-size:25px}}
